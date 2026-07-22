@@ -2,26 +2,30 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-questions = [
-    {
-        "category": "Learning Style",
-        "question": "When learning something new, I prefer to:",
-        "answers": [
-            "Watch videos or diagrams",
-            "Listen to explanations or discussions",
-            "Do hands-on activities or experiments",
-            "Read articles or textbooks"
-        ]
-    }
-]
-
 
 @app.route("/")
 def home():
-    return render_template(
-        "quiz.html",
-        question=questions[0]
-    )
+    return render_template("home.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+@app.route("/quiz")
+def quiz():
+    return render_template("quiz.html")
+
+
+@app.route("/results")
+def results():
+    return render_template("results.html")
+
+
+@app.route("/reviews")
+def reviews():
+    return render_template("reviews.html")
 
 
 if __name__ == "__main__":
