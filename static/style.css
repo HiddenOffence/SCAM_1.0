@@ -164,3 +164,69 @@ body{
     box-shadow: var(--shadow);
 }
 
+/* ==========================================
+   Feature Cards
+========================================== */
+
+.features{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    padding:80px 8%;
+
+}
+
+.feature-card{
+
+    width:320px;
+
+    background:white;
+
+    color:var(--text);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h2{
+
+    margin-bottom:15px;
+
+    color:var(--primary-blue);
+
+}
+
+.feature-card p{
+
+    line-height:1.7;
+
+}
+
