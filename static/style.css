@@ -230,3 +230,68 @@ body{
 
 }
 
+/* ==========================================
+   Steps
+========================================== */
+
+.steps{
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.steps h2{
+
+    font-size:2.8rem;
+
+    margin-bottom:60px;
+
+}
+
+.step-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.step{
+
+    width:280px;
+
+}
+
+.number{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--primary-blue);
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
